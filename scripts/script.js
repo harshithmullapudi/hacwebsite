@@ -149,5 +149,13 @@ typewriter.type();
 setTimeout(function(){
     document.getElementById('npm-install').style.display = 'none';
     document.getElementsByClassName('intern-detail')[0].style.display = 'block';
-    document.getElementsByClassName('interns-section')[0].style.display = 'grid';
-}, 13000)
+    console.log(window.innerWidth)
+    if(window.innerWidth <= 600)
+    {
+        document.getElementsByClassName('interns-section')[0].style.display = 'block';
+    }
+    else
+    {
+         document.getElementsByClassName('interns-section')[0].style.display = 'grid';
+    }
+}, 1000)
