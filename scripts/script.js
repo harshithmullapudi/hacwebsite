@@ -158,4 +158,4 @@ setTimeout(function(){
     {
          document.getElementsByClassName('interns-section')[0].style.display = 'grid';
     }
-}, 1000)
+}, 14000)
