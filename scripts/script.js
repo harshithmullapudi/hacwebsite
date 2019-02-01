@@ -74,16 +74,6 @@ function handleClick(event) {
 internsSectionElem.addEventListener('click', handleClick);
 
 
-
-// Start npm start 
-
-setTimeout(function(){
-    document.getElementById('npm-install').style.display = 'none';
-    document.getElementsByClassName('intern-detail')[0].style.display = 'block';
-    document.getElementsByClassName('interns-section')[0].style.display = 'grid';
-}, 13000)
-
-
 // This is typewriter function 
 function setupTypewriter(t) {
     var HTML = t.innerHTML;
@@ -153,3 +143,11 @@ function setupTypewriter(t) {
 var typer = document.getElementById('npm-install');
 typewriter = setupTypewriter(typer);
 typewriter.type();
+
+// Start npm start 
+
+setTimeout(function(){
+    document.getElementById('npm-install').style.display = 'none';
+    document.getElementsByClassName('intern-detail')[0].style.display = 'block';
+    document.getElementsByClassName('interns-section')[0].style.display = 'grid';
+}, 13000)
