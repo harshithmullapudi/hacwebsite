@@ -15,8 +15,8 @@ const internDataMap = {
         linkedin: 'akshay'
     },
     aaqa: {
-        name: 'Aaqa Ishqtaq',
-        linkedin: 'aaqa'
+        name: 'Aaqa Ishtyaq',
+        linkedin: 'aaqaishtyaq'
     },
     danish: {
         name: 'Danish',
