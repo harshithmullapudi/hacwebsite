@@ -114,8 +114,8 @@ const internDataMap = {
         "name": "Nimeeh Jain",
         "type": "SDE",
         "links": [
-            "https://www.nimeshjain.com/",
-            "https://instagram.com/devnimi/"
+            "https://www.nimeshjain.com",
+            "https://instagram.com/devnimi"
         ],
         "phrase": "My name is Nimesh Jain and I'm not an engineer*"
     },
@@ -137,16 +137,10 @@ function handleClick(event) {
     internTypeElem.innerHTML = `"${internData.type}"`;
     internPhraseElem.innerHTML = `<h3><span class='warning'>$</span> ${internData.phrase}</h3>`;
     internLinkElem.innerHTML = `[
-        <a class="github" href="${internData.links[0]}">${internData.links[0].replace("https://github.com/", "").replace("https://twitter.com/", "")}</a>,
-        <a class="linkedin" href="${internData.links[1]}">${internData.links[1].replace("https://linkedin.com/in/", "").replace("https://instagram.com/", "").replace("http://www.", "")}</a>
+        <a class="github" href="${internData.links[0]}">${internData.links[0].replace("https://github.com/", "").replace("https://twitter.com/", "").replace(/http[s]:\/\//, "").replace("www.", "")}</a>,
+        <a class="linkedin" href="${internData.links[1]}">${internData.links[1].replace("https://linkedin.com/in/", "").replace("https://instagram.com/", "").replace(/http[s]*:\/\//, "").replace("www.", "")}</a>
     ]`;
-    // const gitlink = elem.closest('a.github');
-    // gitlink.innerHTML = `${internData.links[0]}`;
-    // gitlink.setAttribute('href', internData.links[0]);
-    // linkedinUrl = 'https://linkedin.com/in/' + internData.linkedin;
-    // internLinkedinElem.innerHTML = linkedinUrl;
-    // internLinkedinElem.href = linkedinUrl;
-    var typer = null; //document.querySelector('.typewriter');
+    var typer = document.querySelector('#typewriter');
     typewriter = setupTypewriter(typer);
     typewriter.type();
 
