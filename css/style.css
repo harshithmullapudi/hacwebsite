@@ -44,6 +44,19 @@ body {
     margin-bottom: 6px;
 }
 
+.phrase {
+    display: none;
+    max-width: 400px;
+    font-style: italic;
+    word-wrap: break-word;
+    margin-left: 80px;
+}
+
+.phrase h3 {
+    font-size: 1.8em;
+    color: #555;
+}
+
 .title {
     font-size: 5rem;
     margin: 0;
@@ -51,7 +64,7 @@ body {
 }
 
 .subtitle {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #555;
 }
 
@@ -179,6 +192,30 @@ body {
   text-align: center;
 }
 
+footer {
+    position: absolute;
+    bottom: -80px;
+    display: none;
+    justify-content: space-between;
+    background-color: #0066cc;
+    color: #fff;
+    padding: 5px 15px;
+    width: 100%;
+    font-style: italic;
+}
+
+footer .footer-left {
+    padding: 0 30px;
+}
+
+footer .footer-right {
+    padding: 0 30px;
+    text-align: right;
+}
+
+footer .footer-right > span {
+    padding: 0 10px;
+}
 
 @media only screen and (max-width: 600px) {
   .intern-code-container
