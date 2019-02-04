@@ -241,5 +241,5 @@ setTimeout(function(){
     {
         document.getElementsByClassName('interns-section')[0].style.display = 'grid';
     }
-}, 14000);
+}, 1);
 // 14000

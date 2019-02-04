@@ -218,6 +218,10 @@ footer .footer-right > span {
 }
 
 @media only screen and (max-width: 600px) {
+    .phrase {
+        margin-left: 0;
+        font-size: 0.75em;
+    }
   .intern-code-container
   {
     display: none;
@@ -234,5 +238,13 @@ footer .footer-right > span {
     .mobile-view
     {
       display: block;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        font-size: 0.5em;
+    }
+    body {
+        padding-bottom: 60px;
     }
 }
