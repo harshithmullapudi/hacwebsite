@@ -13,8 +13,17 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .container {
-    background: url('../images/background.png');
+    background: black;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
@@ -22,26 +31,39 @@ body {
 }
 
 .details-section {
-    display: flex;
+    display: none;
     flex: 1;
     align-items: flex-end;
     padding: 0 50px;
     z-index: 500;
-    min-height: 150px;
+    max-height: 350px;
 }
 
 .introduction {
     min-width: 40%;
-    text-align: center;
     position: absolute;
     top: 7%;
+
 }
 
 .hackerrank-logo {
-    width: 50%;
     height: auto;
-    margin-left: 5px;
+    margin-left: 8%;
     margin-bottom: 6px;
+}
+
+.phrase {
+    display: none;
+    max-width: 500px;
+    word-wrap: break-word;
+    font-family: "Courier New";
+    text-align: left;
+     margin-left: 8%;
+}
+
+.phrase h3 {
+    font-size: 1.2em;
+    color: #555;
 }
 
 .title {
@@ -51,8 +73,14 @@ body {
 }
 
 .subtitle {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #555;
+}
+
+#npm-install {
+    margin-top: 50px;
+    color: white;
+    display: none;
 }
 
 .intern-detail {
@@ -179,8 +207,67 @@ body {
   text-align: center;
 }
 
+footer {
+    font-family: 'Open Sans', 'sans';
+    position: fixed;
+    bottom: 0;
+    display: none;
+    justify-content: space-between;
+    background-color: #0066cc;
+    color: #fff;
+    padding: 5px 15px;
+    width: 100%;
+}
+
+footer .footer-left {
+    padding: 0 30px;
+}
+
+footer .footer-right {
+    padding: 0 30px;
+    text-align: right;
+}
+
+footer .footer-right > span {
+    padding: 0 10px;
+}
+.catchPhrase
+{
+    font-size: 1em;
+    margin: 30px;
+    font-family: 'Courier New';
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    word-break: break-word;
+    display: none;
+}
+@media screen and (max-width: 1366px) {
+    .phrase h3 span {
+        font-size: 1.10em;
+    }
+    .intern-code-container {
+        font-size: 1em !important;
+    }
+}
 
 @media only screen and (max-width: 600px) {
+    .catchPhrase
+        {
+            display: block;
+            }
+    html
+    {
+        overflow-x: hidden;
+    }
+    .details-section {
+        min-height: 150px;
+        max-height: unset;
+    }
+    .phrase {
+        margin-left: 0;
+        font-size: 0.75em;
+    }
   .intern-code-container
   {
     display: none;
@@ -192,10 +279,19 @@ body {
   .interns-section
   {
     padding: 0;
+    background-color: #f3f3f3;
     display: block!important;
   }
     .mobile-view
     {
       display: block;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        font-size: 0.5em;
+    }
+    body {
+        padding-bottom: 0!important;
     }
 }
