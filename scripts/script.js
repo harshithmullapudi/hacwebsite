@@ -140,10 +140,6 @@ function handleClick(event) {
         <a class="github" href="${internData.links[0]}">${internData.links[0].replace("https://github.com/", "").replace("https://twitter.com/", "").replace(/http[s]:\/\//, "").replace("www.", "")}</a>,
         <a class="linkedin" href="${internData.links[1]}">${internData.links[1].replace("https://linkedin.com/in/", "").replace("https://instagram.com/", "").replace(/http[s]*:\/\//, "").replace("www.", "")}</a>
     ]`;
-    var typer = document.querySelector('#typewriter');
-    typewriter = setupTypewriter(typer);
-    typewriter.type();
-
 }
 
 internsSectionElem.addEventListener('click', handleClick);
@@ -228,6 +224,9 @@ setTimeout(function(){
     document.getElementsByClassName('intern-detail')[0].style.display = 'block';
     document.getElementsByClassName('phrase')[0].style.display = 'block';
     document.querySelector('footer').style.display = 'inline-flex';
+    document.getElementsByClassName('container')[0].style.backgroundImage = "url('./images/background.png')";
+    document.getElementsByClassName('container')[0].style.backgroundColor = "white";
+    document.getElementsByClassName('details-section')[0].style.display = 'flex';
     // console.log(window.innerWidth)
     if(window.innerWidth <= 600)
     {
