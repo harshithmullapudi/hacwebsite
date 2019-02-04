@@ -226,7 +226,9 @@ typewriter = setupTypewriter(typer);
 typewriter.type();
 
 // Start npm start
-
+setTimeout(function() {
+    document.getElementById('npm-install').style.display = 'block';
+}, 1);
 setTimeout(function(){
     document.getElementById('npm-install').style.display = 'none';
     document.getElementsByClassName('intern-detail')[0].style.display = 'block';

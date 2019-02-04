@@ -77,6 +77,10 @@ a:hover {
     color: #555;
 }
 
+#npm-install {
+    display: none;
+}
+
 .intern-detail {
     flex: 1;
     position: absolute;
