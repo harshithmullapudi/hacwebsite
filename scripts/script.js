@@ -63,7 +63,7 @@ const internDataMap = {
             "https://github.com/theKnack",
             "https://linkedin.com/in/01srinath"
         ],
-        "phrase": "Error: 404 Not Found"
+        "phrase": "Why are you even reading this?"
     },
     harshith: {
         "name": "Harshith Mullapudi",
@@ -126,7 +126,7 @@ const internDataMap = {
             "https://github.com/Progyan1997",
             "https://linkedin.com/in/progyan-bhattacharya"
         ],
-        "phrase": "Loves to Make, Dares to Break"
+        "phrase": "I am never going to give up, that's my ninja way!"
     }
 };
 function handleClick(event) {
