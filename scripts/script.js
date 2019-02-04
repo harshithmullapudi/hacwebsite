@@ -24,7 +24,7 @@ const internDataMap = {
             "https://github.com/kakshay21",
             "https://linkedin.com/in/kakshay21"
         ],
-        "phrase": "Error: 404 Not Found"
+        "phrase": "Brute-forcing my way through life."
     },
     aaqa: {
         "name": "Aaqa Ishtyaq",
@@ -51,7 +51,7 @@ const internDataMap = {
         "type": "TCE",
         "links": [
             "https://github.com/marshal4world",
-            "https://www.linkedin.com/in/marshal4world/",
+            "https://linkedin.com/in/marshal4world",
             "https://codeforces.com/profile/marshal4world"
         ],
         "phrase": "I turn coffee into code. Given enough coffee I could rule the world :p"
@@ -138,7 +138,7 @@ function handleClick(event) {
     internPhraseElem.innerHTML = `<h3><span class='warning'>$</span> ${internData.phrase}</h3>`;
     internLinkElem.innerHTML = `[
         <a class="github" href="${internData.links[0]}">${internData.links[0].replace("https://github.com/", "").replace("https://twitter.com/", "")}</a>,
-        <a class="linkedin" href="${internData.links[1]}">${internData.links[1].replace("https://linkedin.com/in/", "").replace("https://instagram.com/", "")}</a>
+        <a class="linkedin" href="${internData.links[1]}">${internData.links[1].replace("https://linkedin.com/in/", "").replace("https://instagram.com/", "").replace("http://www.", "")}</a>
     ]`;
     // const gitlink = elem.closest('a.github');
     // gitlink.innerHTML = `${internData.links[0]}`;
@@ -241,5 +241,5 @@ setTimeout(function(){
     {
         document.getElementsByClassName('interns-section')[0].style.display = 'grid';
     }
-}, 1);
+}, 14000);
 // 14000
