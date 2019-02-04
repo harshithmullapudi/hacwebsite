@@ -207,7 +207,7 @@ a:hover {
 
 footer {
     font-family: 'Open Sans', 'sans';
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: none;
     justify-content: space-between;
@@ -228,6 +228,21 @@ footer .footer-right {
 
 footer .footer-right > span {
     padding: 0 10px;
+}
+
+@media screen and (max-width: 1366px) {
+    .phrase {
+        margin-left: 8%;
+    }
+    .phrase h3 {
+        font-size: 1.2em;
+    }
+    .phrase h3 span {
+        font-size: 1.10em;
+    }
+    .intern-code-container {
+        font-size: 1em !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
